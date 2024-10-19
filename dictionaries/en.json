@@ -1,0 +1,60 @@
+{
+  "switcher": {
+    "title": "Change language",
+    "select": "English - 🇺🇸",
+    "search": "Search language",
+    "notFound": "No language found"
+  },
+  "current-locale": "Current locate",
+  "myName": {
+      "label": "My name is Luiz Obara"
+  },
+  "banner": {
+    "welcomeMessage": "Welcome to my portfolio",
+    "name": "Luiz Obara",
+    "title": "Full-stack developer"
+  },
+  "navigation": {
+    "lang": "en",
+    "aboutMe": "About Me",
+    "aboutMeDescription": "Young technology enthusiast, constantly developing personally and professionally, always looking to learn and share knowledge.",
+    "academicBackground": "Academic Background",
+    "degree": "Analysis and Systems Development - FACENS",
+    "email": "Email",
+    "contact": "Contact",
+    "whatsappContact": "Contact me via WhatsApp",
+    "hobbiesServices": "Hobbies & Services",
+    "projects": "Projects",
+    "services": [
+      {
+        "title": "Livecoding",
+        "href": "https://www.twitch.tv/luizobara",
+        "description": "I do live streams working on personal projects."
+      },
+      {
+        "title": "Grupo de Jovens JUST",
+        "href": "https://www.instagram.com/jovensjust/",
+        "description": "I participate in the Santa Teresa D'Ávila Community, volunteering at events."
+      },
+      {
+        "title": "Instagram",
+        "href": "https://www.instagram.com/dixx.obara/",
+        "description": "I aim to help new technology students with my content."
+      },
+      {
+        "title": "ACM Sorocaba YMCA Líderes",
+        "href": "https://www.instagram.com/cl_acmsorocaba/",
+        "description": "I was a volunteer monitor for camps and summer camps."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Page Contact"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "about": {
+    "title": "About me"
+  }
+}

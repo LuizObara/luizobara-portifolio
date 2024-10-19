@@ -1,0 +1,60 @@
+{
+  "switcher": {
+    "title": "Mudar idioma",
+    "select": "Português - 🇧🇷",
+    "search": "Buscar idioma",
+    "notFound": "Nenhum idioma encontrado"
+  },
+  "current-locale": "Localização atual",
+  "myName": {
+    "label": "Meu nome é Luiz Obara"
+  },
+  "banner": {
+    "welcomeMessage": "Seja Bem-vindo ao meu portfólio",
+    "name": "Luiz Obara",
+    "title": "Desenvolvedor Full-stack"
+  },
+  "navigation": {
+    "lang": "pt",
+    "aboutMe": "Sobre Mim",
+    "aboutMeDescription": "Jovem interessado em tecnologia, em constante desenvolvimento pessoal e profissional, buscando sempre aprender e compartilhar conhecimento",
+    "academicBackground": "Formação Acadêmica",
+    "degree": "Análise e Desenvolvimento de Sistemas - FACENS",
+    "email": "E-mail",
+    "contact": "Contato",
+    "whatsappContact": "Contate-me pelo WhatsApp",
+    "hobbiesServices": "Hobbies & Serviços",
+    "projects": "Projetos",
+    "services": [
+      {
+        "title": "Livecoding",
+        "href": "https://www.twitch.tv/luizobara",
+        "description": "Realizo transmissões ao vivo trabalhando em projetos pessoais."
+      },
+      {
+        "title": "Grupo de Jovens JUST",
+        "href": "https://www.instagram.com/jovensjust/",
+        "description": "Participo da Comunidade Santa Teresa D'Ávila, em eventos como voluntário"
+      },
+      {
+        "title": "Instagram",
+        "href": "https://www.instagram.com/dixx.obara/",
+        "description": "Procuro ajudar novos estudantes de tecnologia com meus conteúdos."
+      },
+      {
+        "title": "ACM Sorocaba YMCA Líderes",
+        "href": "https://www.instagram.com/cl_acmsorocaba/",
+        "description": "Fui monitor voluntário de acampamentos e colônia de férias."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Pagina de contato"
+  },
+  "projects": {
+    "title": "Projetos"
+  },
+  "about": {
+    "title": "Sobre Mim"
+  }
+}
