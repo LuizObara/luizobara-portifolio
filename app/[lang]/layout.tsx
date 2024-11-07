@@ -36,7 +36,7 @@ export default async function Layout({ children, params: { lang }}: {
               <NavigationBar dictionary={dictionary["navigation"]}/>
             </div>
             <div className="block lg:hidden">
-              <ButtonOffcanvas lang={dictionary.lang}/>
+              <ButtonOffcanvas dictionary={dictionary["navigation"]}/>
             </div>
           </nav>
         </header>
@@ -53,7 +53,7 @@ export default async function Layout({ children, params: { lang }}: {
           <Toaster />
         </div>
 
-        <footer className="w-full flex items-center justify-around border-t py-2 px-[100px] left-0 bg-background">  
+        <footer className="w-full lg:flex items-center justify-around border-t py-2 px-[100px] left-0 bg-background hidden lg:block">  
           {/* TODO arrumar navegações para mobile */}
           {/* <NavigationFooter dictionary={dictionary["navigation"]}/> */} 
           <ThemeSwitcher />

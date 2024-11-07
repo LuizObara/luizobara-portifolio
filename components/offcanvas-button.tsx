@@ -13,20 +13,33 @@ import {
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import { ThemeSwitcher } from "@/components/theme-switcher";
 
 type Route = {
   name: string;
   path: string;
 };
 
-const routes: Route[]= [
-  { name: "About"   , path: "about"    },
-  { name: "Contact" , path: "contact"  },
-  { name: "Projects", path: "projects" },
-  { name: "Hobbies" , path: "hobbies"  },
-];
+export default function ButtonOffcanvas({
+  dictionary,
+}: {
+  dictionary: {
+    lang: string;
+    aboutMe: string;
+    contact: string;
+    whatsappContact: string;
+    hobbiesServices: string;
+    projects: string;
+  };
+} ) {
 
-export default function ButtonOffcanvas({ lang }: { lang: string }) {
+  const routes: Route[] = [
+    { name: dictionary.aboutMe        , path: "about"    },
+    { name: dictionary.contact        , path: "contact"  },
+    { name: dictionary.aboutMe        , path: "projects" },
+    { name: dictionary.hobbiesServices, path: "hobbies"  },
+  ];
+
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -44,7 +57,7 @@ export default function ButtonOffcanvas({ lang }: { lang: string }) {
         <div className="flex-grow gap-4 mt-5">
           {routes.map((route: Route, index: number) => (
             <div key={index} className="grid grid-cols-1 items-center mb-5">
-              <Link href={`/${lang}/${route.path}`}>
+              <Link href={`/${dictionary.lang}/${route.path}`}>
                 <Button variant="outline" className="w-full" type="button">
                   <div className="hover:underline">
                     {route.name}
@@ -54,9 +67,9 @@ export default function ButtonOffcanvas({ lang }: { lang: string }) {
             </div>
           ))}
         </div>
-        <SheetFooter className="mt-auto">
+        <SheetFooter>
           <SheetClose asChild>
-            <Button type="button">Fechar</Button>
+              <ThemeSwitcher />
           </SheetClose>
         </SheetFooter>
       </SheetContent>
