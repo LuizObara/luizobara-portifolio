@@ -3,8 +3,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const montserrat = Montserrat({
+  weight:  ['100', '400', '700', '900'],
+  style:   ['normal', 'italic'],
   subsets: ['latin'],
-  weight: ['400', '700']
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -26,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html lang="en" suppressHydrationWarning={true} >
       <body className={montserrat.className}>
         {children}
       </body>

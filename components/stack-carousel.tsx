@@ -9,16 +9,17 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export default function StackCarousel ({ stacks }:
-{ stacks: {
-    name: string,
-    icon: string
-}[]}) {
+export default function StackCarousel ({ stacks }: { 
+    stacks: {
+        name: string, 
+        icon: string
+    }[]
+}) {
     return (
         <Carousel className="w-full">
             <CarouselContent>
                 {stacks.map((stack, index) => (
-                    <CarouselItem key={index} className="basis-1/3 md:basis-1/3 lg:basis-1/12">
+                    <CarouselItem key={index} className="basis-1/6 md:basis-1/9 lg:basis-1/12">
                         <div className="relative h-40">
                             <Image
                                 priority

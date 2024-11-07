@@ -1,5 +1,6 @@
 {
   "current-locale": "Localização atual",
+  "lang": "pt",
   "switcher": {
     "title": "Mudar idioma",
     "select": "Português - 🇧🇷",
@@ -12,7 +13,7 @@
     "title": "Desenvolvedor Front-End",
     "buttonRow": {
       "lang": "pt",
-      "contactButton": "Fale comigo!",
+      "contactButton": "Fale Comigo!",
       "downloadButton": "Baixar Currículo"
     }
   },
