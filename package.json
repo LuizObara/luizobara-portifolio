@@ -24,7 +24,7 @@
     "embla-carousel-react": "^8.3.0",
     "lucide-react": "^0.453.0",
     "negotiator": "^0.6.3",
-    "next": "14.2.15",
+    "next": "^15.0.3-canary.9",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",

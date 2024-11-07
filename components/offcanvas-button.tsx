@@ -1,5 +1,6 @@
 'use client';
 
+import ComboLanguage from "@/components/combo-language";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -22,6 +23,7 @@ type Route = {
 
 export default function ButtonOffcanvas({
   dictionary,
+  switcher,
 }: {
   dictionary: {
     lang: string;
@@ -31,7 +33,13 @@ export default function ButtonOffcanvas({
     hobbiesServices: string;
     projects: string;
   };
-} ) {
+  switcher: {
+    title: string;
+    select: string;
+    search: string;
+    notFound: string;
+  };
+}) {
 
   const routes: Route[] = [
     { name: dictionary.aboutMe        , path: "about"    },
@@ -68,7 +76,8 @@ export default function ButtonOffcanvas({
           ))}
         </div>
         <SheetFooter>
-          <SheetClose asChild>
+          <SheetClose asChild>            
+              <ComboLanguage dictionary={switcher}/>
               <ThemeSwitcher />
           </SheetClose>
         </SheetFooter>

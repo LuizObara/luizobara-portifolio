@@ -10,10 +10,14 @@ import { Toaster } from "@/components/ui/sonner";
 import { Locale } from "@/i18n-config";
 import Link from 'next/link';
 
-export default async function Layout({ children, params: { lang }}: {
-      children: React.ReactNode;
-      params: { lang: Locale };
-}){
+export default async function Layout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: { lang: Locale };
+}) {
+  const { lang } = await params;
   const dictionary = await getDictionary(lang);
   return (
     <ThemeProvider
@@ -36,7 +40,7 @@ export default async function Layout({ children, params: { lang }}: {
               <NavigationBar dictionary={dictionary["navigation"]}/>
             </div>
             <div className="block lg:hidden">
-              <ButtonOffcanvas dictionary={dictionary["navigation"]}/>
+              <ButtonOffcanvas dictionary={dictionary["navigation"]} switcher={dictionary["switcher"]}/>
             </div>
           </nav>
         </header>
@@ -44,7 +48,7 @@ export default async function Layout({ children, params: { lang }}: {
         <div className="flex-1 w-full flex flex-col items-center overflow-y-auto overflow-x-hidden"> 
           <div className="flex flex-col w-full min-h-full max-w-7xl">
             <div className="block">
-              <div className="flex justify-end mt-3 mx-3">
+              <div className="hidden justify-end mt-3 mx-3 xl:flex">
                 <ComboLanguage dictionary={dictionary.switcher}/>
               </div>
             </div>
