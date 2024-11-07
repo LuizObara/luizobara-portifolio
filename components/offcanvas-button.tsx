@@ -36,7 +36,7 @@ export default function ButtonOffcanvas({
   const routes: Route[] = [
     { name: dictionary.aboutMe        , path: "about"    },
     { name: dictionary.contact        , path: "contact"  },
-    { name: dictionary.aboutMe        , path: "projects" },
+    { name: dictionary.projects       , path: "projects" },
     { name: dictionary.hobbiesServices, path: "hobbies"  },
   ];
 
