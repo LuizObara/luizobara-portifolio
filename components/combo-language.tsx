@@ -47,15 +47,15 @@ export default function ComboLanguage({
   };
 
   return (
-    <div className="flex items-center">
-        <p className="text-lg font-bold mx-3">{dictionary.title}</p>
+    <div className="flex items-center justify-between">
+        <p className="lg:text-lg font-bold lg:mx-3">{dictionary.title}</p>
         <Popover open={open} onOpenChange={setOpen}>
             <PopoverTrigger asChild>
                 <Button
                 variant="outline"
                 role="combobox"
                 aria-expanded={open}
-                className="w-[200px] justify-between"
+                className="w-1/2 md:w-[200px] justify-between"
                 >
                 {value
                     ? i18n.locales.find((locale) => locale === value)
@@ -63,7 +63,7 @@ export default function ComboLanguage({
                 <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                 </Button>
             </PopoverTrigger>
-            <PopoverContent className="w-[200px] p-0">
+            <PopoverContent className="w-[150px] md:w-[200px] p-0">
                 <Command>
                     {/* <CommandInput placeholder={dictionary.search} /> */}
                     <CommandList>

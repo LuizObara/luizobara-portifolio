@@ -4,13 +4,16 @@ import { Locale } from "@/i18n-config";
 import Link from "next/link";
 import Image from "next/image";
 
-export default async function PageProjects({
-    params: { lang },
-}: {
-    params: { 
-        lang: Locale
+export default async function PageProjects(
+    props: {
+        params: Promise<{ 
+            lang: Locale
+        }>
     }
-}) {
+) {
+    const params = await props.params;
+    const { lang } = params;
+
     const dictionary = await getDictionary(lang);
     return (
         <div className="p-3">
@@ -26,9 +29,9 @@ export default async function PageProjects({
                             <Image
                                 src={project.image}
                                 alt={project.altImage}
-                                fill  
+                                fill 
+                                priority
                                 sizes="(min-width: 100%)"
-                                loading = 'lazy'
                                 style={{ objectFit: 'contain' }} 
                             />                      
                         </div>

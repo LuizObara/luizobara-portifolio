@@ -2,11 +2,14 @@ import { getDictionary } from "@/lib/get-dictionary";
 import { Locale } from "@/i18n-config";
 import StackCarousel from "@/components/stack-carousel";
 
-export default async function AboutPage({
-    params: {lang},
-}: {
-    params: { lang: Locale };
-}) {
+export default async function AboutPage(
+    props: {
+        params: Promise<{ lang: Locale }>;
+    }
+) {
+    const params = await props.params;
+    const { lang } = params;
+
     const dictionary = await getDictionary(lang);
     return (
         <div>

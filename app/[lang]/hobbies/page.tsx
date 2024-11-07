@@ -4,13 +4,16 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from 'next/image';
 
-export default async function PageHobbies({
-    params: { lang },
-}: {
-    params: { 
-        lang: Locale
+export default async function PageHobbies(
+    props: {
+        params: Promise<{ 
+            lang: Locale
+        }>
     }
-}) {
+) {
+    const params = await props.params;
+    const { lang } = params;
+
     const dictionary = await getDictionary(lang);
     return (
         <div className="p-3">

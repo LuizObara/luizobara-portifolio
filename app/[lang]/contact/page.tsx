@@ -1,13 +1,16 @@
 import { Locale } from "@/i18n-config";
 import { getDictionary } from "@/lib/get-dictionary";
 
-export default async function PageContact({
-    params: { lang },
-}: {
-    params: { 
-        lang: Locale
+export default async function PageContact(
+    props: {
+        params: Promise<{ 
+            lang: Locale
+        }>
     }
-}) {
+) {
+    const params = await props.params;
+    const { lang } = params;
+
     const dictionary = await getDictionary(lang);
     return (
         <div>

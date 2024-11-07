@@ -1,7 +1,10 @@
 'use client';
 
+import { ThemeSwitcher } from "@/components/theme-switcher";
 import ComboLanguage from "@/components/combo-language";
 import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
+import Link from "next/link";
 import {
   Sheet,
   SheetClose,
@@ -12,9 +15,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
-import Link from "next/link";
-import { ThemeSwitcher } from "@/components/theme-switcher";
 
 type Route = {
   name: string;
@@ -76,8 +76,8 @@ export default function ButtonOffcanvas({
           ))}
         </div>
         <SheetFooter>
-          <SheetClose asChild>            
-              <ComboLanguage dictionary={switcher}/>
+          <ComboLanguage dictionary={switcher}/>
+          <SheetClose asChild>
               <ThemeSwitcher />
           </SheetClose>
         </SheetFooter>
