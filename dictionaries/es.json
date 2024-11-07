@@ -1,18 +1,20 @@
 {
+  "current-locale": "Configuración regional actual",
   "switcher": {
     "title": "Cambiar idioma",
     "select": "Español - 🇪🇸",
     "search": "Buscar idioma",
     "notFound": "No se encontró ningún idioma"
   },
-  "current-locale": "Configuración regional actual",
-  "myName": {
-    "label": "Mi nombre es Luiz Obara"
-  },
   "banner": {
     "welcomeMessage": "Bienvenido a mi portafolio",
     "name": "Luiz Obara",
-    "title": "Desarrollador Full Stack"
+    "title": "Desarrollador Front-End",
+    "buttonRow": {
+      "lang": "es",
+      "contactButton": "teste",
+      "downloadButton": "teste"
+    }
   },
   "navigation": {
     "lang": "es",
@@ -52,9 +54,155 @@
     "title": "Pagina de contacto"
   },
   "projects": {
-    "title": "Proyectos"
+    "title": "Proyectos recientes",
+    "projectsCollection": [
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/projects/baglink.png",
+        "altImage": "Baglink Proyecto imagen",
+        "title": "Baglink - Carrito de productos",
+        "description": "Un sistema que creé para registrar y monitorear los precios de productos de interés para el usuario, realizando solicitudes a una API externa de scraping de información de productos.",
+        "urlProduction": "",
+        "seeProduction": "",
+        "urlRepository": "https://www.github.com/GustavoObara/baglink",
+        "seeRepository": "Ver el repositorio"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/projects/linkpreview.png",
+        "altImage": "Api de link preview usada en Baglink",
+        "title": "Link-Preview API Flask",
+        "description": "Utilizado en mi proyecto Baglink, la API de link preview realiza scraping de la página del producto añadido al carrito para extraer y devolver información como precio, imagen y descripción del producto.",
+        "urlProd": "",
+        "seeProduction": "",
+        "urlRepository": "https://www.github.com/GustavoObara/link-preview-api",
+        "seeRepository": "Ver el repositorio"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/projects/spotifyweb.png",
+        "altImage": "clon de spotify web",
+        "title": "Clon de Spotify Web + Dashboard Interactivo",
+        "description": "En el 4º semestre de mi carrera, realizamos un proyecto que involucraba las disciplinas de desarrollo web e Inteligencia de Negocios para crear un clon de Spotify con un dashboard interactivo que muestra datos de uso del usuario.",
+        "urlProd": "https://teste-f59ed.web.app/login",        
+        "seeProduction": "",
+        "urlRepository": "https://www.github.com/Bassanetto/spotify-web",
+        "seeRepository": "Ver el repositorio"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/projects/spotifyandroid.jpeg",
+        "altImage": "app de spotify android",
+        "title": "Spotify Android",
+        "description": "Durante el 5º semestre, se nos propuso realizar el mismo proyecto del semestre anterior, pero como una aplicación móvil. Desarrollamos una versión reducida utilizando la biblioteca SDK e interacciones con la API Web de Spotify.",
+        "urlProd": "",
+        "seeProduction": "",
+        "urlRepository": "https://github.com/GustavoObara/Spotify-Android",
+        "seeRepository": "Ver el repositorio"
+      }
+    ]
   },
   "about": {
-    "title": "Sobre Mi"
+    "title": "Sobre Mí",
+    "text": {
+      "background": "Me llamo Luiz Gustavo Obara, tengo 22 años y soy graduado en Análisis y Desarrollo de Sistemas por FACENS. Desde joven, siempre me ha impulsado una curiosidad natural por entender cómo funcionan las cosas, lo que me llevó a seguir una carrera en tecnología.",
+      "experience": "Recientemente trabajé como Asistente de Infraestructura y Desarrollador Frontend en JPTI, donde fui responsable de la gestión y mantenimiento de servidores, soporte técnico y desarrollo de sistemas internos como un sistema de tickets y una plataforma de comercio electrónico en el sector de cosméticos. También adquirí experiencia en soporte de redes e infraestructura en el Ayuntamiento de Sorocaba, además de haber aprovechado otras oportunidades que fortalecieron mis habilidades en TI.",
+      "present": "Actualmente, estoy en busca de nuevas oportunidades, aportando conmigo experiencia práctica tanto en desarrollo como en infraestructura, junto con mi disposición para aprender y afrontar nuevos desafíos. Mi enfoque está en la mejora continua y la creación de soluciones innovadoras que ayuden a alcanzar los objetivos propuestos."
+    },
+    "stacks": [
+      {
+        "name": "Angular",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Angular-Dark.svg"
+      },
+      {
+        "name": "NextJS",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/NextJS-Dark.svg"
+      },
+      {
+        "name": "React",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/React-Dark.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/TypeScript.svg"
+      },
+      {
+        "name": "Supabase",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Supabase-Dark.svg"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Bootstrap.svg"
+      },
+      {
+        "name": "TailwindCSS",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/TailwindCSS-Dark.svg"
+      },
+      {
+        "name": "Android Studio",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/AndroidStudio-Dark.svg"
+      },
+      {
+        "name": "Spring",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Spring-Dark.svg"
+      },
+      {
+        "name": "Java",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Java-Dark.svg"
+      },
+      {
+        "name": "Python",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Python-Dark.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/PostgreSQL-Dark.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/MySQL-Dark.svg"
+      },
+      {
+        "name": "Git",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Git.svg"
+      },
+      {
+        "name": "DiscordJS",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/DiscordJS-Dark.svg"
+      },
+      {
+        "name": "Postman",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Postman.svg"
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "Pagina de Hobbies",
+    "services": [
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/twitch.png",
+        "title": "Livecoding",
+        "href": "https://www.twitch.tv/luizobara",
+        "description": "Realizo transmisiones en vivo trabajando en proyectos personales.",
+        "button": "ver más"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/just.png",
+        "title": "Grupo de Jóvenes JUST",
+        "href": "https://www.instagram.com/jovensjust/",
+        "description": "Participo de la Comunidad Santa Teresa D'Ávila, como voluntario en eventos.",
+        "button": "ver más"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/instagram.png",
+        "title": "Instagram",
+        "href": "https://www.instagram.com/dixx.obara/",
+        "description": "Busco ayudar a nuevos estudiantes de tecnología con mis contenidos.",
+        "button": "ver más"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/acm.png",
+        "title": "ACM Sorocaba YMCA Líderes",
+        "href": "https://www.instagram.com/cl_acmsorocaba/",
+        "description": "Fui monitor voluntario de campamentos y colonias de vacaciones.",
+        "button": "ver más"
+      }
+    ]
   }
 }

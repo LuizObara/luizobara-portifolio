@@ -1,18 +1,20 @@
 {
+  "current-locale": "Current locate",
   "switcher": {
     "title": "Change language",
     "select": "English - 🇺🇸",
     "search": "Search language",
     "notFound": "No language found"
   },
-  "current-locale": "Current locate",
-  "myName": {
-      "label": "My name is Luiz Obara"
-  },
   "banner": {
     "welcomeMessage": "Welcome to my portfolio",
     "name": "Luiz Obara",
-    "title": "Full-stack developer"
+    "title": "Front-End developer",
+    "buttonRow": {
+      "lang": "en",
+      "contactButton": "Get in Touch",
+      "downloadButton": "Download CV"
+    }
   },
   "navigation": {
     "lang": "en",
@@ -52,9 +54,155 @@
     "title": "Page Contact"
   },
   "projects": {
-    "title": "Projects"
+    "title": "Recent Projects",
+    "projectsCollection": [
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/projects/baglink.png",
+        "altImage": "Baglink Project image",
+        "title": "Baglink - Product Cart",
+        "description": "A system I created to register and monitor the prices of products of user interest, making requests to an external scraping API for product information.",
+        "urlProduction": "",
+        "seeProduction": "",
+        "urlRepository": "https://www.github.com/GustavoObara/baglink",
+        "seeRepository": "See the repository"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/projects/linkpreview.png",
+        "altImage": "Link preview API used in Baglink",
+        "title": "Link-Preview API Flask",
+        "description": "Used in my Baglink project, the link preview API scrapes the product page added to the cart to extract and return information such as price, image, and product description.",
+        "urlProduction": "",
+        "seeProduction": "",
+        "urlRepository": "https://www.github.com/GustavoObara/link-preview-api",
+        "seeRepository": "See the repository"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/projects/spotifyweb.png",
+        "altImage": "spotify web clone",
+        "title": "Spotify Web Clone + Interactive Dashboard",
+        "description": "During the 4th semester of my degree, we created a project involving web development and Business Intelligence disciplines to build a Spotify clone with an interactive dashboard that displays user usage data.",
+        "urlProduction": "https://teste-f59ed.web.app/login",
+        "seeProduction": "",       
+        "urlRepository": "https://www.github.com/Bassanetto/spotify-web",
+        "seeRepository": "See the repository"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/projects/spotifyandroid.jpeg",
+        "altImage": "spotify android app",
+        "title": "Spotify Android",
+        "description": "During the 5th semester, we were asked to redo the previous semester's project, but this time as a mobile app. We developed a reduced version using the SDK library and interactions with the Spotify Web API.",
+        "urlProduction": "",
+        "seeProduction": "",
+        "urlRepository": "https://github.com/GustavoObara/Spotify-Android",
+        "seeRepository": "See the repository"
+      }
+    ]
   },
   "about": {
-    "title": "About me"
+    "title": "About Me",
+    "text": {
+      "background": "My name is Luiz Gustavo Obara, I am 22 years old and I graduated in Systems Analysis and Development from FACENS. From a young age, I have always been driven by a natural curiosity to understand how things work, which led me to pursue a career in technology.",
+      "experience": "Recently, I worked as an Infrastructure Assistant and Frontend Developer at JPTI, where I was responsible for managing and maintaining servers, providing technical support, and developing internal systems such as a ticketing system and an e-commerce platform in the cosmetics sector. I also gained experience in network support and infrastructure at the Sorocaba City Hall, in addition to taking other opportunities that strengthened my IT skills.",
+      "present": "I am currently looking for new opportunities, bringing with me practical experience in both development and infrastructure, along with my willingness to learn and embrace new challenges. My focus is on continuous improvement and creating innovative solutions to achieve the proposed goals."
+    },
+    "stacks": [
+      {
+        "name": "Angular",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Angular-Dark.svg"
+      },
+      {
+        "name": "NextJS",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/NextJS-Dark.svg"
+      },
+      {
+        "name": "React",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/React-Dark.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/TypeScript.svg"
+      },
+      {
+        "name": "Supabase",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Supabase-Dark.svg"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Bootstrap.svg"
+      },
+      {
+        "name": "TailwindCSS",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/TailwindCSS-Dark.svg"
+      },
+      {
+        "name": "Android Studio",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/AndroidStudio-Dark.svg"
+      },
+      {
+        "name": "Spring",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Spring-Dark.svg"
+      },
+      {
+        "name": "Java",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Java-Dark.svg"
+      },
+      {
+        "name": "Python",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Python-Dark.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/PostgreSQL-Dark.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/MySQL-Dark.svg"
+      },
+      {
+        "name": "Git",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Git.svg"
+      },
+      {
+        "name": "DiscordJS",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/DiscordJS-Dark.svg"
+      },
+      {
+        "name": "Postman",
+        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Postman.svg"
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "Page Hobbies",
+    "services": [
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/twitch.png",
+        "title": "Livecoding",
+        "href": "https://www.twitch.tv/luizobara",
+        "description": "I do live streams working on personal projects.",
+        "button": "See more"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/just.png",
+        "title": "Grupo de Jovens JUST",
+        "href": "https://www.instagram.com/jovensjust/",
+        "description": "I participate in the Santa Teresa D'Ávila Community, volunteering at events.",
+        "button": "See more"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/instagram.png",
+        "title": "Instagram",
+        "href": "https://www.instagram.com/dixx.obara/",
+        "description": "I aim to help new technology students with my content.",
+        "button": "See more"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/acm.png",
+        "title": "ACM Sorocaba YMCA Líderes",
+        "href": "https://www.instagram.com/cl_acmsorocaba/",
+        "description": "I was a volunteer monitor for camps and summer camps.",
+        "button": "See more"
+      }
+    ]
   }
 }

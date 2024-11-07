@@ -24,8 +24,9 @@ export function NavigationBar({
   dictionary,
 }: {
   dictionary: {
-    lang: string
+    lang: string;
     aboutMe: string;
+
     aboutMeDescription: string;
     academicBackground: string;
     degree: string;
@@ -34,6 +35,7 @@ export function NavigationBar({
     whatsappContact: string;
     hobbiesServices: string;
     projects: string;
+
     services: {
       title: string;
       href: string;
@@ -73,13 +75,13 @@ export function NavigationBar({
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/" title="Formação Acadêmica">
+              <ListItem href="/" title={dictionary.academicBackground}>
                 {dictionary.degree}
               </ListItem>
-              <ListItem href="mailto:luizobara@gmail.com" title="E-mail">
+              <ListItem href="mailto:luizobara@gmail.com" title={dictionary.email}>
                 luizobara@gmail.com
               </ListItem>
-              <ListItem href="https://wa.me/15988038900" title="Contato" target="blank">
+              <ListItem href="https://wa.me/15988038900" title={dictionary.contact} target="blank">
                 {dictionary.whatsappContact}
               </ListItem>
             </ul>
@@ -87,7 +89,7 @@ export function NavigationBar({
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <Link href={`/${dictionary.lang}/services`} legacyBehavior passHref>
+          <Link href={`/${dictionary.lang}/hobbies`} legacyBehavior passHref>
             <NavigationMenuTrigger>{dictionary.hobbiesServices}</NavigationMenuTrigger>
           </Link>
           <NavigationMenuContent>
@@ -107,7 +109,6 @@ export function NavigationBar({
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          {/* TODO Existe um erro quando você está na aba de contato, ele direciona para /[lang/[lang]/contato preciso verificar porque ocorre isso] */}
           <Link href={`/${dictionary.lang}/contact`} legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               {dictionary.contact}

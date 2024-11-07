@@ -10,7 +10,7 @@ export default async function IndexPage({
   const dictionary = await getDictionary(lang);
   return (
     <div className="w-full h-full">
-        <div className="flex items-center h-[600px] py-5">
+        <div className="flex items-center py-5">
             <HeroBanner dictionary={dictionary.banner}/>
         </div>
     </div>

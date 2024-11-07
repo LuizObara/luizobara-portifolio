@@ -76,3 +76,17 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  z-index: 0;
+  background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #757575;
+  border-radius: 2rem;
+}

@@ -9,7 +9,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Luiz Obara",
-  description: "Portifólio Desenvolvedor Full-stack",
+  description: "Portifólio Desenvolvedor Front-End",
   authors: {name: "Luiz Obara", url: "https://github.com/GustavoObara"},
   openGraph: {
     title: 'Luiz Obara Portifólio',
