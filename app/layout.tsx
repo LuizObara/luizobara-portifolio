@@ -11,12 +11,12 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Luiz Obara",
-  description: "Portifólio Desenvolvedor Front-End",
+  description: "Portfólio Desenvolvedor Front-End",
   authors: {name: "Luiz Obara", url: "https://github.com/GustavoObara"},
   openGraph: {
-    title: 'Luiz Obara Portifólio',
+    title: 'Luiz Obara Portfólio',
     emails: 'luizobara@gmail.com',
-    description: 'A Web portifólio ',
+    description: 'A Web portfólio ',
     images: [{url: 'https://github.com/gustavoobara.png'}],
     countryName: 'Brasil'
   }
