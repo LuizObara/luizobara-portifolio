@@ -13,8 +13,8 @@
     "title": "Desarrollador Front-End",
     "buttonRow": {
       "lang": "es",
-      "contactButton": "teste",
-      "downloadButton": "teste"
+      "contactButton": "Fale conmigo",
+      "downloadButton": "Descargar currículum"
     }
   },
   "navigation": {
@@ -52,7 +52,16 @@
     ]
   },
   "contact": {
-    "title": "Pagina de contacto"
+    "title": "Página de Contacto",
+    "urlWhatsapp": "https://api.whatsapp.com/send/?phone=15988038900&text&type=phone_number&app_absent=0",
+    "form": {
+      "heading": "Contáctanos",
+      "namePlaceholder": "Tu Nombre",
+      "emailPlaceholder": "Tu Correo Electrónico",
+      "messagePlaceholder": "Tu Mensaje",
+      "submitButton": "Enviar Mensaje",
+      "whatsappButton": "WhatsApp"
+    }
   },
   "projects": {
     "title": "Proyectos recientes",

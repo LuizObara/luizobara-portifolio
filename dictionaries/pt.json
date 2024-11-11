@@ -52,8 +52,16 @@
     ]
   },
   "contact": {
-    "title": "Pagina de contato",
-    "urlWhatsapp": "https://api.whatsapp.com/send/?phone=15988038900&text&type=phone_number&app_absent=0"
+    "title": "Página de Contato",
+    "urlWhatsapp": "https://api.whatsapp.com/send/?phone=15988038900&text&type=phone_number&app_absent=0",
+    "form": {
+      "heading": "Fale Comigo",
+      "namePlaceholder": "Seu Nome",
+      "emailPlaceholder": "Seu E-mail",
+      "messagePlaceholder": "Sua Mensagem",
+      "submitButton": "Enviar Mensagem",
+      "whatsappButton": "WhatsApp"
+    }
   },
   "projects": {
     "title": "Projetos recentes",

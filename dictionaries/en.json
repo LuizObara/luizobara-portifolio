@@ -14,7 +14,7 @@
     "buttonRow": {
       "lang": "en",
       "contactButton": "Get in Touch",
-      "downloadButton": "Download CV"
+      "downloadButton": "Download Resume"
     }
   },
   "navigation": {
@@ -52,7 +52,16 @@
     ]
   },
   "contact": {
-    "title": "Page Contact"
+    "title": "Contact Page",
+    "urlWhatsapp": "https://api.whatsapp.com/send/?phone=15988038900&text&type=phone_number&app_absent=0",
+    "form": {
+      "heading": "Get in Touch",
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "Your Email",
+      "messagePlaceholder": "Your Message",
+      "submitButton": "Send Message",
+      "whatsappButton": "WhatsApp"
+    }
   },
   "projects": {
     "title": "Recent Projects",
