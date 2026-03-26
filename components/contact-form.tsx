@@ -46,20 +46,20 @@ function ContactForm({
             name="name"
             type="text"
             placeholder={contact.form.namePlaceholder}
-            className="rounded-md p-2 border border-2 focus:ring-0"
+            className="rounded-md p-2 border focus:ring-0"
             disabled={isPending}
         />
         <input
             name="email"
             type="email"
             placeholder={contact.form.emailPlaceholder}
-            className="rounded-md p-2 border border-2"
+            className="rounded-md p-2 border"
             disabled={isPending}
         />
         <textarea
             name="message"
             placeholder={contact.form.messagePlaceholder}
-            className="rounded-md p-2 min-h-40 border border-2"
+            className="rounded-md p-2 min-h-40 border"
             disabled={isPending}
             style={{resize: 'none'}}
         />

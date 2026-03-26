@@ -15,9 +15,9 @@ import {
 } from "@/components/ui/navigation-menu";
 
 import {
-    Avatar,
-    AvatarFallback,
-    AvatarImage,
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
 } from "@/components/ui/avatar";
 
 export function NavigationBar({
@@ -46,60 +46,78 @@ export function NavigationBar({
   return (
     <NavigationMenu>
       <NavigationMenuList>
+
+        {/* ABOUT */}
         <NavigationMenuItem>
-          <Link href={`/${dictionary.lang}/about`} legacyBehavior passHref>
-            <NavigationMenuTrigger>{dictionary.aboutMe}</NavigationMenuTrigger>
-          </Link>
+          <NavigationMenuTrigger>
+            {dictionary.aboutMe}
+          </NavigationMenuTrigger>
+
           <NavigationMenuContent>
             <ul className="grid gap-3 p-3 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
                     className="flex h-full w-full select-none flex-col rounded-md bg-gradient-to-b from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
-                    href="https://www.linkedin.com/in/luiz-obara-544945218/" target="blank"
+                    href="https://www.linkedin.com/in/luizobara/"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <div className="flex items-center justify-between">
-                        <Avatar>
-                            <AvatarImage src="https://github.com/gustavoobara.png" alt="@luizobara" />
-                            <AvatarFallback>LO</AvatarFallback>
-                        </Avatar>
-                        <h3 className="text-lg font-medium">
-                            Luiz Obara
-                        </h3>
+                      <Avatar>
+                        <AvatarImage src="https://github.com/luizobara.png" alt="@luizobara" />
+                        <AvatarFallback>LO</AvatarFallback>
+                      </Avatar>
+                      <h3 className="text-lg font-medium">
+                        Luiz Obara
+                      </h3>
                     </div>
+
                     <div className="flex h-full justify-end">
-                        <p className="text-sm leading-tight content-end text-muted-foreground">
-                          {dictionary.aboutMeDescription}                     
-                        </p>
+                      <p className="text-sm leading-tight content-end text-muted-foreground">
+                        {dictionary.aboutMeDescription}
+                      </p>
                     </div>
                   </a>
                 </NavigationMenuLink>
               </li>
+
               <ListItem href="/" title={dictionary.academicBackground}>
                 {dictionary.degree}
               </ListItem>
+
               <ListItem href="mailto:luizobara@gmail.com" title={dictionary.email}>
                 luizobara@gmail.com
               </ListItem>
-              <ListItem href="https://wa.me/15988038900" title={dictionary.contact} target="blank">
+
+              <ListItem
+                href="https://wa.me/15988038900"
+                title={dictionary.contact}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {dictionary.whatsappContact}
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
 
+        {/* HOBBIES / SERVICES */}
         <NavigationMenuItem>
-          <Link href={`/${dictionary.lang}/hobbies`} legacyBehavior passHref>
-            <NavigationMenuTrigger>{dictionary.hobbiesServices}</NavigationMenuTrigger>
-          </Link>
+          <NavigationMenuTrigger>
+            {dictionary.hobbiesServices}
+          </NavigationMenuTrigger>
+
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-2 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[400px] gap-3 p-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {dictionary.services.map((service) => (
                 <ListItem
                   key={service.title}
                   title={service.title}
                   href={service.href}
-                  target="blank"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {service.description}
                 </ListItem>
@@ -108,20 +126,22 @@ export function NavigationBar({
           </NavigationMenuContent>
         </NavigationMenuItem>
 
+        {/* CONTACT */}
         <NavigationMenuItem>
-          <Link href={`/${dictionary.lang}/contact`} legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link href={`/${dictionary.lang}/contact`}>
               {dictionary.contact}
-            </NavigationMenuLink>
-          </Link>
+            </Link>
+          </NavigationMenuLink>
         </NavigationMenuItem>
 
+        {/* PROJECTS */}
         <NavigationMenuItem>
-          <Link href={`/${dictionary.lang}/projects`} legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link href={`/${dictionary.lang}/projects`}>
               {dictionary.projects}
-            </NavigationMenuLink>
-          </Link>
+            </Link>
+          </NavigationMenuLink>
         </NavigationMenuItem>
 
       </NavigationMenuList>
@@ -129,7 +149,10 @@ export function NavigationBar({
   );
 }
 
-const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWithoutRef<"a">>(({ className, title, children, ...props }, ref) => {
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a">
+>(({ className, title, children, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
@@ -141,7 +164,9 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWit
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
+          <div className="text-sm font-medium leading-none">
+            {title}
+          </div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
@@ -149,6 +174,6 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWit
       </NavigationMenuLink>
     </li>
   );
-})
+});
 
-ListItem.displayName = "ListItem"
+ListItem.displayName = "ListItem";
