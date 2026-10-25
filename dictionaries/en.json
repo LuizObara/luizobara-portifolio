@@ -1,218 +1,347 @@
 {
   "lang": "en",
-  "current-locale": "Current locate",
-  "switcher": {
-    "title": "Change language",
-    "select": "English - 🇺🇸",
-    "search": "Search language",
-    "notFound": "No language found"
+  "meta": {
+    "title": "Luiz Obara — Full-Stack Developer",
+    "description": "Portfolio of Luiz Obara, a full-stack developer based in Sorocaba, Brazil: web, automation (RPA), data engineering and back-end."
   },
-  "banner": {
-    "welcomeMessage": "Welcome to my portfolio",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "stack": "Stack",
+    "projects": "Projects",
+    "community": "Community",
+    "contact": "Contact",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "toggleTheme": "Toggle theme",
+    "main": "Main"
+  },
+  "hero": {
+    "status": "Open to new opportunities",
     "name": "Luiz Obara",
-    "title": "Full-Stack developer",
-    "buttonRow": {
-      "lang": "en",
-      "contactButton": "Get in Touch",
-      "downloadButton": "Download Resume"
+    "role": "Full-Stack Developer.",
+    "lead": "I build products end to end — interfaces in Next.js and Angular, APIs and automations in Python and Java — with the mindset of someone who also takes care of the infrastructure and the data.",
+    "contactCta": "Get in touch",
+    "resumeCta": "Download résumé",
+    "location": "Sorocaba, Brazil · Systems Analysis — Facens",
+    "avatarAlt": "Luiz Obara's memoji"
+  },
+  "about": {
+    "eyebrow": "01 — About",
+    "title": "From pixel to server, with care at every layer.",
+    "paragraphs": [
+      "I'm Luiz, a developer with a degree in Systems Analysis and Development from Facens. My path brings together IT infrastructure, front-end development, data engineering and process automation.",
+      "Today I build Python bots with BotCity integrated with SAP and SharePoint, and I teach programming and Artificial Intelligence to young people. Having worked in infrastructure shapes how I develop: I think about deployment, stability and whoever will maintain the system next."
+    ],
+    "highlights": [
+      { "icon": "education", "label": "Education", "value": "Systems Analysis — Facens" },
+      { "icon": "experience", "label": "Work", "value": "Development, automation and data" },
+      { "icon": "location", "label": "Based in", "value": "Sorocaba, SP — Brazil" },
+      { "icon": "focus", "label": "Focus", "value": "Web, RPA and data engineering" }
+    ]
+  },
+  "experience": {
+    "eyebrow": "02 — Experience",
+    "title": "Where I've been building.",
+    "lead": "Automation, data, development and infrastructure: real projects, real users and systems that need to stay up.",
+    "items": [
+      {
+        "role": "Junior Automation Developer (RPA)",
+        "company": "IBA Solutions",
+        "details": "Contractor · Remote",
+        "period": "Mar 2026 — Present",
+        "current": true,
+        "bullets": [
+          "I build and deploy Python automations with BotCity, orchestrating scheduled routines and eliminating recurring manual work.",
+          "I integrate bots with SAP to run transactions and extract operational data, reducing rework and typing errors.",
+          "I build ETL pipelines across SAP, spreadsheets and SharePoint, delivering standardized datasets to business teams."
+        ],
+        "tags": ["Python", "BotCity", "SAP", "SharePoint", "ETL"]
+      },
+      {
+        "role": "Technology Instructor / Programming and AI Workshop Leader",
+        "company": "Lar Escola Monteiro Lobato",
+        "details": "Sorocaba, Brazil · Full-time",
+        "period": "Mar 2026 — Present",
+        "current": true,
+        "bullets": [
+          "I teach programming logic and Python in Google Colab to young people in socially vulnerable situations.",
+          "I lead modules on introductory Artificial Intelligence, advanced digital literacy and Microsoft Office.",
+          "I prepare students for the job market, guiding them in building their professional profiles on LinkedIn and Burh."
+        ],
+        "tags": ["Python", "Google Colab", "AI", "Teaching"]
+      },
+      {
+        "role": "Data Engineering Intern",
+        "company": "Unesp — Sorocaba Campus",
+        "details": "Internship",
+        "period": "Sep 2025 — Feb 2026",
+        "current": false,
+        "bullets": [
+          "Worked on an end-to-end ELT pipeline, from extraction with Python and Selenium to making data available for analysis.",
+          "Modeled the data warehouse with dbt on PostgreSQL and orchestrated the loads with Apache Airflow.",
+          "Delivered Metabase dashboards to leadership and deployed the solution on Linux with Docker Compose."
+        ],
+        "tags": ["Python", "Airflow", "dbt", "PostgreSQL", "Metabase", "Docker"]
+      },
+      {
+        "role": "Infrastructure Assistant / Front-end Developer",
+        "company": "JPTI — JP Tecnologia da Informação",
+        "details": "On-site",
+        "period": "Apr 2023 — Aug 2024",
+        "current": false,
+        "bullets": [
+          "Built the front-end of a new corporate web chat and managed the internal platform used by about 300 people.",
+          "Contributed to the front-end of a cosmetics e-commerce store and built internal systems, such as a ticketing portal.",
+          "Managed servers, mailboxes and Active Directory users, providing level 2 technical support."
+        ],
+        "tags": ["Front-end", "E-commerce", "Active Directory", "L2 Support"]
+      },
+      {
+        "role": "Network and Infrastructure Support Intern",
+        "company": "Sorocaba City Hall",
+        "details": "Internship",
+        "period": "Aug 2022 — Apr 2023",
+        "current": false,
+        "bullets": [
+          "Operated network administration tools (Active Directory, DHCP and Intelligent Management Center) supporting the city hall network.",
+          "Assisted public servants by phone, email and in person, solving access and connectivity incidents."
+        ],
+        "tags": ["Networking", "Active Directory", "DHCP", "IMC"]
+      },
+      {
+        "role": "Technical Support Intern",
+        "company": "Azevedo's Soluções em T.I.",
+        "details": "Internship",
+        "period": "Jan 2022 — Jun 2022",
+        "current": false,
+        "bullets": [
+          "Performed preventive maintenance, replacement and repair of equipment for supermarket chains in the Sorocaba region.",
+          "Supported the planning and maintenance of our clients' network infrastructure."
+        ],
+        "tags": ["Hardware", "Networking", "Support"]
+      }
+    ],
+    "education": {
+      "role": "Associate Degree in Systems Analysis and Development",
+      "company": "Centro Universitário Facens",
+      "details": "Education",
+      "period": "Feb 2022 — Aug 2024"
     }
   },
-  "navigation": {
-    "lang": "en",
-    "aboutMe": "About Me",
-    "aboutMeDescription": "Young technology enthusiast, constantly developing personally and professionally, always looking to learn and share knowledge.",
-    "academicBackground": "Academic Background",
-    "degree": "Analysis and Systems Development - FACENS",
-    "email": "Email",
-    "contact": "Contact",
-    "whatsappContact": "Contact me via WhatsApp",
-    "hobbiesServices": "Hobbies & Services",
-    "projects": "Projects",
-    "services": [
+  "stack": {
+    "eyebrow": "03 — Stack",
+    "title": "Tools I use every day.",
+    "summary": "{count} technologies · {groups} categories",
+    "groups": [
       {
-        "title": "Livecoding",
+        "icon": "languages",
+        "title": "Languages",
+        "description": "The foundation: from automation scripts to web apps.",
+        "items": ["Python", "Java", "TypeScript", "JavaScript", "SQL", "PHP", "C++"]
+      },
+      {
+        "icon": "automation",
+        "title": "Automation & RPA",
+        "description": "Bots that connect systems and remove manual work.",
+        "items": ["BotCity", "UiPath", "Selenium", "BeautifulSoup", "SAP", "SharePoint"]
+      },
+      {
+        "icon": "data",
+        "title": "Data & BI",
+        "description": "Pipelines, modeling and dashboards for decisions.",
+        "items": ["ETL/ELT", "Apache Airflow", "dbt", "Metabase", "Power BI", "Jupyter"]
+      },
+      {
+        "icon": "backend",
+        "title": "Back-end & APIs",
+        "description": "REST APIs, services and integrations.",
+        "items": ["Spring Boot", "Node.js", "Express", "Flask", "REST", "Postman"]
+      },
+      {
+        "icon": "frontend",
+        "title": "Front-end & Mobile",
+        "description": "Responsive interfaces, components and Android apps.",
+        "items": ["Next.js", "React", "Angular", "Tailwind CSS", "shadcn/ui", "Android Studio"]
+      },
+      {
+        "icon": "database",
+        "title": "Databases",
+        "description": "Relational, NoSQL and backend-as-a-service.",
+        "items": ["PostgreSQL", "MySQL", "SQL Server", "MongoDB", "Firebase", "Supabase"]
+      },
+      {
+        "icon": "devops",
+        "title": "Cloud & DevOps",
+        "description": "Deployment, containers and the infrastructure behind it.",
+        "items": ["AWS", "Docker", "Docker Compose", "Linux", "Git", "Active Directory"]
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "04 — Projects",
+    "title": "Featured projects.",
+    "seeAll": "See all projects",
+    "github": "View on GitHub",
+    "featuredLabel": "Main project",
+    "viewProject": "View project",
+    "repository": "Repository",
+    "code": "Code",
+    "live": "Live",
+    "pageEyebrow": "Projects",
+    "pageTitle": "All projects.",
+    "pageLead": "Personal, academic and internship projects: from web to hardware.",
+    "items": [
+      {
+        "slug": "baglink",
+        "image": "baglink",
+        "icon": "",
+        "imageAlt": "Baglink screen with a list of products",
+        "title": "Baglink",
+        "context": "Personal project",
+        "description": "Collaborative web platform for organizing and sharing shopping lists and product links as a team, with automatic item previews powered by a custom scraping API.",
+        "tags": ["Next.js", "TypeScript", "Supabase", "shadcn/ui"],
+        "urlRepository": "https://github.com/LuizObara/baglink",
+        "urlProduction": ""
+      },
+      {
+        "slug": "link-preview-api",
+        "image": "linkpreview",
+        "icon": "",
+        "imageAlt": "JSON response from the Link Preview API",
+        "title": "Link Preview API",
+        "context": "Personal project",
+        "description": "Flask REST API that takes a product URL and returns its price, image and description via web scraping. It automatically enriches Baglink items.",
+        "tags": ["Python", "Flask", "BeautifulSoup", "REST"],
+        "urlRepository": "https://github.com/LuizObara/link-preview-api",
+        "urlProduction": ""
+      },
+      {
+        "slug": "spotify-web",
+        "image": "spotifyweb",
+        "icon": "",
+        "imageAlt": "Clone of the Spotify web interface",
+        "title": "Spotify Clone + BI Dashboard",
+        "context": "Project Factory IV — Facens",
+        "description": "A UX-focused redesign of the Spotify interface in Angular, with Power BI visualizations of the user's listening habits.",
+        "tags": ["Angular", "TypeScript", "SCSS", "Power BI"],
+        "urlRepository": "https://github.com/LuizObara/spotify",
+        "urlProduction": "https://teste-f59ed.web.app/login"
+      },
+      {
+        "slug": "spotify-android",
+        "image": "spotifyandroid",
+        "icon": "",
+        "imageAlt": "Android app integrated with Spotify",
+        "title": "Spotify Android",
+        "context": "Project Factory V — Facens",
+        "description": "Android app integrated with Spotify, featuring OAuth2 authentication, dynamic lists with RecyclerView, multi-threaded image loading and an adaptive layout.",
+        "tags": ["Java", "Android Studio", "Spotify SDK", "Web API"],
+        "urlRepository": "https://github.com/LuizObara/Spotify-Android",
+        "urlProduction": ""
+      },
+      {
+        "slug": "uipath-routers",
+        "image": "",
+        "icon": "workflow",
+        "imageAlt": "",
+        "title": "Router setup automation with UiPath",
+        "context": "Internship project",
+        "description": "Automated router configuration for school environments, reducing the process to a single run and freeing up time to validate the information.",
+        "tags": ["UiPath", "RPA"],
+        "urlRepository": "",
+        "urlProduction": ""
+      },
+      {
+        "slug": "idog",
+        "image": "",
+        "icon": "cpu",
+        "imageAlt": "",
+        "title": "Idog — automatic feeder",
+        "context": "Project Factory I — Facens",
+        "description": "Automatic feeder for stray animals built with Arduino and C++: an ultrasonic sensor measures the food level and a 12V motor refills it.",
+        "tags": ["Arduino", "C++", "Tinkercad"],
+        "urlRepository": "",
+        "urlProduction": ""
+      }
+    ]
+  },
+  "community": {
+    "eyebrow": "05 — Community & hobbies",
+    "title": "Off the clock.",
+    "lead": "Live coding, content and volunteering: learning in public and helping those who are just starting out.",
+    "items": [
+      {
+        "icon": "twitch",
+        "title": "Live coding on Twitch",
+        "description": "I stream live while working on personal projects.",
         "href": "https://www.twitch.tv/luizobara",
-        "description": "I do live streams working on personal projects."
+        "cta": "Watch"
       },
       {
-        "title": "Grupo de Jovens JUST",
-        "href": "https://www.instagram.com/jovensjust/",
-        "description": "I participate in the Santa Teresa D'Ávila Community, volunteering at events."
-      },
-      {
-        "title": "Instagram",
+        "icon": "instagram",
+        "title": "Content on Instagram",
+        "description": "I try to help new tech students with my content.",
         "href": "https://www.instagram.com/dixx.obara/",
-        "description": "I aim to help new technology students with my content."
+        "cta": "Follow"
       },
       {
-        "title": "ACM Sorocaba YMCA Líderes",
+        "icon": "heart",
+        "title": "JUST Youth Group",
+        "description": "I volunteer at events of the Santa Teresa D'Ávila Community.",
+        "href": "https://www.instagram.com/jovensjust/",
+        "cta": "Learn more"
+      },
+      {
+        "icon": "users",
+        "title": "YMCA Sorocaba — Leaders",
+        "description": "I was a volunteer counselor at camps and summer programs.",
         "href": "https://www.instagram.com/cl_acmsorocaba/",
-        "description": "I was a volunteer monitor for camps and summer camps."
+        "cta": "Learn more"
       }
     ]
   },
   "contact": {
-    "title": "Contact Page",
-    "urlWhatsapp": "https://api.whatsapp.com/send/?phone=15988038900&text&type=phone_number&app_absent=0",
+    "eyebrow": "06 — Contact",
+    "title": "Let's build something together?",
+    "lead": "Open to jobs, freelance work and collaborations in development, automation and data. Send me a message and I'll get back to you.",
+    "direct": "Or reach out directly",
+    "email": "luizobara@gmail.com",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "whatsappValue": "+55 15 98803-8900",
+    "urlWhatsapp": "https://wa.me/5515988038900",
+    "linkedinLabel": "LinkedIn",
+    "linkedinValue": "/in/luizobara",
     "form": {
-      "heading": "Get in Touch",
-      "namePlaceholder": "Your Name",
-      "emailPlaceholder": "Your Email",
-      "messagePlaceholder": "Your Message",
-      "submitButton": "Send Message",
-      "whatsappButton": "WhatsApp"
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@company.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me a bit about the role or the project…",
+      "required": "All fields are required.",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "emptyField": "Please fill out this field.",
+      "invalidEmail": "Enter a valid email address.",
+      "successTitle": "Message sent!",
+      "successDescription": "Thanks, I'll get back to you soon.",
+      "errorTitle": "Couldn't send your message",
+      "errorDescription": "Try again or send me an email."
     }
   },
-  "projects": {
-    "title": "Recent Projects",
-    "projectsCollection": [
-      {
-        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/projects/baglink.png",
-        "altImage": "Baglink Project image",
-        "title": "Baglink - Product Cart",
-        "description": "A system I created to register and monitor the prices of products of user interest, making requests to an external scraping API for product information.",
-        "urlProduction": "",
-        "seeProduction": "",
-        "urlRepository": "https://www.github.com/GustavoObara/baglink",
-        "seeRepository": "See the repository"
-      },
-      {
-        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/projects/linkpreview.png",
-        "altImage": "Link preview API used in Baglink",
-        "title": "Link-Preview API Flask",
-        "description": "Used in my Baglink project, the link preview API scrapes the product page added to the cart to extract and return information such as price, image, and product description.",
-        "urlProduction": "",
-        "seeProduction": "",
-        "urlRepository": "https://www.github.com/GustavoObara/link-preview-api",
-        "seeRepository": "See the repository"
-      },
-      {
-        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/projects/spotifyweb.png",
-        "altImage": "spotify web clone",
-        "title": "Spotify Web Clone + Interactive Dashboard",
-        "description": "During the 4th semester of my degree, we created a project involving web development and Business Intelligence disciplines to build a Spotify clone with an interactive dashboard that displays user usage data.",
-        "urlProduction": "https://teste-f59ed.web.app/login",
-        "seeProduction": "",       
-        "urlRepository": "https://www.github.com/Bassanetto/spotify-web",
-        "seeRepository": "See the repository"
-      },
-      {
-        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/projects/spotifyandroid.jpeg",
-        "altImage": "spotify android app",
-        "title": "Spotify Android",
-        "description": "During the 5th semester, we were asked to redo the previous semester's project, but this time as a mobile app. We developed a reduced version using the SDK library and interactions with the Spotify Web API.",
-        "urlProduction": "",
-        "seeProduction": "",
-        "urlRepository": "https://github.com/GustavoObara/Spotify-Android",
-        "seeRepository": "See the repository"
-      }
-    ]
-  },
-  "about": {
-    "title": "About Me",
-    "text": {
-      "background": "My name is Luiz Gustavo Obara, I am 22 years old and I graduated in Systems Analysis and Development from FACENS. From a young age, I have always been driven by a natural curiosity to understand how things work, which led me to pursue a career in technology.",
-      "experience": "Recently, I worked as an Infrastructure Assistant and Frontend Developer at JPTI, where I was responsible for managing and maintaining servers, providing technical support, and developing internal systems such as a ticketing system and an e-commerce platform in the cosmetics sector. I also gained experience in network support and infrastructure at the Sorocaba City Hall, in addition to taking other opportunities that strengthened my IT skills.",
-      "present": "I am currently looking for new opportunities, bringing with me practical experience in both development and infrastructure, along with my willingness to learn and embrace new challenges. My focus is on continuous improvement and creating innovative solutions to achieve the proposed goals."
-    },
-    "stacks": [
-      {
-        "name": "Angular",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Angular-Dark.svg"
-      },
-      {
-        "name": "NextJS",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/NextJS-Dark.svg"
-      },
-      {
-        "name": "React",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/React-Dark.svg"
-      },
-      {
-        "name": "TypeScript",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/TypeScript.svg"
-      },
-      {
-        "name": "Supabase",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Supabase-Dark.svg"
-      },
-      {
-        "name": "Bootstrap",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Bootstrap.svg"
-      },
-      {
-        "name": "TailwindCSS",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/TailwindCSS-Dark.svg"
-      },
-      {
-        "name": "Android Studio",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/AndroidStudio-Dark.svg"
-      },
-      {
-        "name": "Spring",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Spring-Dark.svg"
-      },
-      {
-        "name": "Java",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Java-Dark.svg"
-      },
-      {
-        "name": "Python",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Python-Dark.svg"
-      },
-      {
-        "name": "PostgreSQL",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/PostgreSQL-Dark.svg"
-      },
-      {
-        "name": "MySQL",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/MySQL-Dark.svg"
-      },
-      {
-        "name": "Git",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Git.svg"
-      },
-      {
-        "name": "DiscordJS",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/DiscordJS-Dark.svg"
-      },
-      {
-        "name": "Postman",
-        "icon": "https://github.com/tandpfun/skill-icons/raw/main/icons/Postman.svg"
-      }
-    ]
-  },
-  "hobbies": {
-    "title": "Page Hobbies",
-    "services": [
-      {
-        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/twitch.png",
-        "title": "Livecoding",
-        "href": "https://www.twitch.tv/luizobara",
-        "description": "I do live streams working on personal projects.",
-        "button": "See more"
-      },
-      {
-        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/just.png",
-        "title": "Grupo de Jovens JUST",
-        "href": "https://www.instagram.com/jovensjust/",
-        "description": "I participate in the Santa Teresa D'Ávila Community, volunteering at events.",
-        "button": "See more"
-      },
-      {
-        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/instagram.png",
-        "title": "Instagram",
-        "href": "https://www.instagram.com/dixx.obara/",
-        "description": "I aim to help new technology students with my content.",
-        "button": "See more"
-      },
-      {
-        "image": "https://raw.githubusercontent.com/GustavoObara/luizobara/refs/heads/main/assets/images/acm.png",
-        "title": "ACM Sorocaba YMCA Líderes",
-        "href": "https://www.instagram.com/cl_acmsorocaba/",
-        "description": "I was a volunteer monitor for camps and summer camps.",
-        "button": "See more"
-      }
-    ]
+  "footer": {
+    "tagline": "Full-stack developer in Sorocaba, Brazil. Interfaces, APIs, automations and the infrastructure that keeps it all running.",
+    "navigation": "Navigation",
+    "pages": "Pages",
+    "allProjects": "All projects",
+    "hobbies": "Hobbies",
+    "resume": "Résumé (PDF)",
+    "language": "Language",
+    "builtWith": "Built with Next.js, Tailwind and shadcn/ui"
   }
 }

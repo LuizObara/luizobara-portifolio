@@ -43,6 +43,9 @@ const config: Config = {
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
+  			brand: 'hsl(var(--brand))',
+  			success: 'hsl(var(--success))',
+  			surface: 'hsl(var(--surface))',
   			chart: {
   				'1': 'hsl(var(--chart-1))',
   				'2': 'hsl(var(--chart-2))',
@@ -55,6 +58,22 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		fontFamily: {
+  			sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
+  			mono: ['var(--font-geist-mono)', 'ui-monospace', 'monospace']
+  		},
+  		maxWidth: {
+  			container: '1200px'
+  		},
+  		keyframes: {
+  			rise: {
+  				from: { opacity: '0', transform: 'translateY(14px)' },
+  				to: { opacity: '1', transform: 'none' }
+  			}
+  		},
+  		animation: {
+  			rise: 'rise .7s cubic-bezier(.2,.7,.2,1) both'
   		}
   	}
   },

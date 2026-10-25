@@ -8,6 +8,10 @@ export const sendContactEmailAction = async (formData: FormData) => {
     const email = formData.get("email") as string;
     const message = formData.get("message") as string;
 
+    if (!name?.trim() || !email?.trim() || !message?.trim()) {
+      return { errorMessage: "Missing fields" };
+    }
+
     await sendEmail({
       to: "luizobara@gmail.com",
       templateName: "ContactSubmission",
